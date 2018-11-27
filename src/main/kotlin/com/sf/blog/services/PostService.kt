@@ -6,5 +6,7 @@ interface PostService {
 
     fun findByName(name: String): Post?
 
+    //fun finByCreated(created: String): Post?
+
     fun created(post: Post): Post
 }

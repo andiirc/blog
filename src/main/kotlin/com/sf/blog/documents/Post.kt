@@ -1,7 +1,16 @@
 package com.sf.blog.documents
 
+import com.sf.blog.enums.EntryStatusEnum
+import org.springframework.data.annotation.CreatedDate
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
+import java.util.*
 
-@Document
-data class Post(@Id val id: Int, val name: String, val Image: String, val status: String)
+@Document(collection = "post")
+data class Post(
+        @Id val id: String = UUID.randomUUID().toString(),
+        val name: String,
+        val image: String,
+        val status: String
+        //@CreatedDate val created_at: Date
+)
