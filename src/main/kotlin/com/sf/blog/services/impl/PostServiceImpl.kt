@@ -11,7 +11,7 @@ class PostServiceImpl(val postRepository: PostRepository) : PostService{
 
     override fun findByTitle(title: String): Post  = postRepository.findByTitle(title)
 
-    override fun findByCreated(created: String): List<Post>? = postRepository.findByCreated(created)
+    //override fun findByCreated(created: String): List<Post>? = postRepository.findByCreated(created)
 
     override fun created(post: Post): Post = postRepository.save(post)
 

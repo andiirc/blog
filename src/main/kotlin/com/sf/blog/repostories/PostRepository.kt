@@ -10,7 +10,7 @@ interface PostRepository: MongoRepository<Post, String> {
 
     fun findByTitle(@Param("title") title: String): Post
 
-    fun findByCreated(@Param("created_at") create_at: String): List<Post>
+    //fun findByCreated(@Param("created_at") create_at: String): List<Post>
 
     //fun findByCreated(create: String): List<Post>
 
