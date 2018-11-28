@@ -1,6 +1,5 @@
 package com.sf.blog.documents
 
-import com.sf.blog.enums.EntryStatusEnum
 import org.springframework.data.annotation.CreatedDate
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
