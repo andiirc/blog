@@ -4,9 +4,9 @@ import com.sf.blog.documents.Post
 
 interface PostService {
 
-    fun findByName(name: String): Post?
+    fun findByTitle(title: String): Post?
 
-    //fun finByCreated(created: String): Post?
+    fun findByCreated(created: String): List<Post>?
 
     fun created(post: Post): Post
 }

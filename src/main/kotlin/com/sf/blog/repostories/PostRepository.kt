@@ -8,7 +8,9 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource
 @RepositoryRestResource(path = "post")
 interface PostRepository: MongoRepository<Post, String> {
 
-    fun findByName(@Param("name") name: String): Post
+    fun findByTitle(@Param("title") title: String): Post
+
+    fun findByCreated(@Param("created_at") create_at: String): List<Post>
 
     //fun findByCreated(create: String): List<Post>
 

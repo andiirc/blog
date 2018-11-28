@@ -1,6 +1,7 @@
 buildscript {
 	ext {
-		kotlinVersion = '1.2.70'
+		kotlinVersion =  '1.2.70'
+		//klockVersion = '1.0.0'
 		springBootVersion = '2.1.0.RELEASE'
 	}
 	repositories {
@@ -49,6 +50,7 @@ dependencies {
 	implementation('com.fasterxml.jackson.module:jackson-module-kotlin')
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	//implementation "com.soywiz:klock:${klockVersion}"
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 	testImplementation('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
 }

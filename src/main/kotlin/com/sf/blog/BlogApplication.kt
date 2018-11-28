@@ -12,12 +12,15 @@ class BlogApplication(val postRepository: PostRepository): CommandLineRunner {
     override fun run(vararg args: String?) {
         postRepository.deleteAll()
 
-        val post = Post(name = "Test", image = "/images/test", status = EntryStatusEnum.INT_EDIT.toString())
+        val post = Post(image = "/images/test",  title = "Test", body = "Este es un post de prueba",
+                status = EntryStatusEnum.INT_EDIT.toString())
         postRepository.save(post)
 
         println("Post ID: ${post.id}")
-        println("Post Name: ${post.name}")
-        println("Post Estatus: ${post.status}" )
+        println("Post Titutlo: ${post.title}")
+        println("Post Cuerpo: ${post.body}")
+        println("Post Estatus: ${post.status}")
+        println("Post Creado el: ${post.created_at}")
 
     }
 }
