@@ -6,7 +6,7 @@ interface PostService {
 
     fun findByTitle(title: String): Post?
 
-    //fun findByCreated(created: String): List<Post>?
+    fun findByBody(body: String): List<Post>?
 
     fun created(post: Post): Post
 }
