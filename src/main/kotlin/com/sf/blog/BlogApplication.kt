@@ -20,7 +20,7 @@ class BlogApplication(val postRepository: PostRepository): CommandLineRunner {
         println("Post Titutlo: ${post.title}")
         println("Post Cuerpo: ${post.body}")
         println("Post Estatus: ${post.status}")
-        println("Post Creado el: ${post.created_at}")
+        println("Post Creado el: ${post.createdAt}")
 
     }
 }

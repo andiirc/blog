@@ -8,3 +8,5 @@ sprint:
     host: localhost
     port: 27017
     database: blog
+
+server.servlet.context-path: /api
